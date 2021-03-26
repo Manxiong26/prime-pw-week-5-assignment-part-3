@@ -27,6 +27,15 @@ function showCollection(collection){
 }
 showCollection(collection);
 
-function findByArtist(){
-  
+function findByArtist(artistString){
+  let singer = [];
+  for(let i = 0; i < collection.length; i++){
+    if (artistString === collection[i].artist) {
+      singer.push(artistString);
+    }
+  }
+  return singer;
 }
+findByArtist();
+console.log('find Selena Gomez', findByArtist('Selena Gomez'));
+console.log('find Enrique Iglesias', findByArtist('Enrique Iglesias'));
