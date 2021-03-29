@@ -22,7 +22,7 @@ console.log(collection);//testing to see if the added items are in the array.
 function showCollection(collection){
   console.log(collection.length);// used .length to show the length of the array
   for(let i = 0; i < collection.length; i++){
-    console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublish}.`);//used the
+    console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublish}.`);//used template literal to combine the answer with the word by and produced, instead of having to use + sign to combine them together.
   }
 }
 showCollection(collection);
